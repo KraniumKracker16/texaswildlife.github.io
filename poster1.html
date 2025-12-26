@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Native Texas Wildlife</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Comic Sans MS', 'Trebuchet MS', Arial, sans-serif;
+      background: linear-gradient(135deg, #87CEEB 0%, #98D8C8 20%, #7CB342 40%, #8B7355 60%, #D4A574 80%, #87CEEB 100%);
+      background-size: 400% 400%;
+      animation: gradientShift 20s ease infinite;
+      color: #3E2723;
+      padding: 30px 20px;
+      min-height: 100vh;
+    }
+    
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    h1 {
+      text-align: center;
+      color: #5D4037;
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(255,255,255,0.8),
+                   -1px -1px 2px rgba(212,165,116,0.5);
+      margin-bottom: 40px;
+      padding: 20px;
+      background: linear-gradient(135deg, rgba(255,248,220,0.95) 0%, rgba(245,222,179,0.95) 100%);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      border: 4px solid #8B7355;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    h2 {
+      color: #33691E;
+      margin-top: 0;
+      font-size: 2em;
+      text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
+      padding-bottom: 10px;
+      border-bottom: 3px dotted rgba(139,115,85,0.6);
+      margin-bottom: 15px;
+    }
+    
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+    }
+    
+    ul li {
+      padding: 12px 20px;
+      margin: 8px 0;
+      background: linear-gradient(90deg, #FFF8DC 0%, #FFFAF0 100%);
+      border-radius: 25px;
+      border-left: 5px solid;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    }
+    
+    ul li:nth-child(even) {
+      background: linear-gradient(90deg, #B0E0E6 0%, #E0F6FF 100%);
+    }
+    
+    ul li:hover {
+      transform: translateX(10px) scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+    
+    .section {
+      background: linear-gradient(135deg, rgba(245,245,220,0.95) 0%, rgba(255,248,220,0.95) 100%);
+      backdrop-filter: blur(10px);
+      border: 3px solid rgba(139,115,85,0.5);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(62,39,35,0.2);
+      transition: all 0.3s ease;
+    }
+    
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(62,39,35,0.3);
+      border-color: rgba(124,179,66,0.7);
+    }
+    
+    .section:nth-child(odd) {
+      background: linear-gradient(135deg, rgba(245,245,220,0.95) 0%, rgba(255,248,220,0.95) 100%);
+      border-color: rgba(139,115,85,0.5);
+    }
+    
+    .section:nth-child(even) {
+      background: linear-gradient(135deg, rgba(240,248,255,0.95) 0%, rgba(224,255,255,0.95) 100%);
+      border-color: rgba(135,206,235,0.5);
+    }
+    
+    .section:nth-child(1) ul li { border-left-color: #8B4513; }
+    .section:nth-child(2) ul li { border-left-color: #228B22; }
+    .section:nth-child(3) ul li { border-left-color: #4682B4; }
+    .section:nth-child(4) ul li { border-left-color: #CD853F; }
+    .section:nth-child(5) ul li { border-left-color: #5F9EA0; }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    ul li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐾 Native Texas Wildlife Identification Guide</h1>
+
+  <div class="section">
+    <h2>🦌 Game Animals</h2>
+    <ul>
+      <li><a href="white-tailed-deer.html">White-tailed Deer</a></li>
+      <li><a href="mule-deer.html">Mule Deer</a></li>
+      <li><a href="pronghorn-antelope.html">Pronghorn Antelope</a></li>
+      <li><a href="desert-bighorn-sheep.html">Desert Bighorn Sheep</a></li>
+      <li><a href="collared-peccary.html">Collared Peccary (Javelina)</a></li>
+      <li><a href="eastern-fox-squirrel.html">Eastern Fox Squirrel</a></li>
+      <li><a href="eastern-gray-squirrel.html">Eastern Gray Squirrel</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🐾 Fur-bearing Animals</h2>
+    <ul>
+      <li><a href="badger.html">Badger</a></li>
+      <li><a href="beaver.html">Beaver</a></li>
+      <li><a href="nutria.html">Nutria (introduced)</a></li>
+      <li><a href="muskrat.html">Muskrat</a></li>
+      <li><a href="mink.html">Mink</a></li>
+      <li><a href="otter.html">Otter</a></li>
+      <li><a href="long-tailed-weasel.html">Long-tailed Weasel</a></li>
+      <li><a href="ringtail.html">Ringtail</a></li>
+      <li><a href="spotted-skunk.html">Spotted Skunk</a></li>
+      <li><a href="striped-skunk.html">Striped, Hooded, and Hog-nosed Skunks</a></li>
+      <li><a href="raccoon.html">Raccoon</a></li>
+      <li><a href="virginia-opossum.html">Virginia Opossum</a></li>
+      <li><a href="red-fox.html">Red Fox</a></li>
+      <li><a href="gray-fox.html">Gray Fox</a></li>
+      <li><a href="kit-fox.html">Kit Fox and Swift Fox</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🐺 Other Mammals</h2>
+    <ul>
+      <li><a href="coyote.html">Coyote</a></li>
+      <li><a href="bobcat.html">Bobcat</a></li>
+      <li><a href="mountain-lion.html">Mountain Lion</a></li>
+      <li><a href="nine-banded-armadillo.html">Nine-banded Armadillo</a></li>
+      <li><a href="swamp-rabbit.html">Swamp and Cottontail Rabbits</a></li>
+      <li><a href="black-tailed-jackrabbit.html">Black-tailed Jackrabbit</a></li>
+      <li><a href="black-tailed-prairie-dog.html">Black-tailed Prairie Dog</a></li>
+      <li><a href="ground-squirrel.html">Ground and Rock Squirrels</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🐦 Upland Game Birds</h2>
+    <ul>
+      <li><a href="northern-bobwhite.html">Northern Bobwhite Quail</a></li>
+      <li><a href="scaled-quail.html">Scaled Quail</a></li>
+      <li><a href="gambels-quail.html">Gambel's Quail</a></li>
+      <li><a href="mearns-quail.html">Mearns' Quail</a></li>
+      <li><a href="ring-necked-pheasant.html">Ring-necked Pheasant (introduced)</a></li>
+      <li><a href="lesser-prairie-chicken.html">Lesser and Attwater's Prairie Chickens</a></li>
+      <li><a href="plain-chachalaca.html">Plain Chachalaca</a></li>
+      <li><a href="turkey.html">Rio Grande and Eastern Turkey</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🦆 Migratory Game Birds</h2>
+    <ul>
+      <li><a href="ducks.html">Various species of Ducks</a></li>
+      <li><a href="geese.html">Geese and other Waterfowl</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>
